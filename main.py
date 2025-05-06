@@ -835,4 +835,4 @@ if __name__ == '__main__':
     # Start the bot in a separate thread
     from threading import Thread
     Thread(target=run_bot).start()
-
+      app.run(host='0.0.0.0', port=int(os.getenv('PORT', 10000)))
